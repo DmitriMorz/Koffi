@@ -1,0 +1,857 @@
+:root{
+  --coffee: #A08169;
+  --text: #FFEDE0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(115deg, #916E67 0%, #3A160F 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+
+.container_elements{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+/*логотип*/
+/*фон логотипа*/
+.fon_log{
+  display: flex;
+  width: 73px;
+  height: 65px;
+  padding: 9px 0 0 14px;
+
+  background-color: var(--coffee);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+/*Текст логотипа*/
+.logo_txt h4{
+  margin: 0 30px 0 15px;
+  width: 131px;
+  height: 51px; 
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.25em;
+
+  color: var(--text);
+}
+
+
+/*навигация*/
+.navigation {
+  margin-left: 30px;
+}
+
+.navigation ul{
+  display: flex;
+  list-style: none;
+}
+
+.navigation a{
+  margin-right: 30px;
+  font-size: 23px;
+  font-family: 'Zen Old Mincho', serif;
+  color: var(--text);
+}
+
+/*анимация навигации*/
+.menulink {
+  position: relative;
+}
+
+.menulink:hover {
+  color: #B98484;
+}
+
+.menulink:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+
+.menulink::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+
+/*адрес*/
+/*фон адреса*/
+.fon_address{
+  margin-left: 30px;
+  padding: 8px 0 0 13px;
+  width: 45px;
+  height: 44px;
+
+  background: var(--coffee);
+  box-shadow: 10px 10px 11.7px rgba(0, 0, 0, 0.25);
+  border-radius: 76px;
+}
+
+/*текст 'адрес'*/
+.address_text {
+  position: relative;
+  margin-left: 15px;
+  width: 90px;
+  height: 35px;
+
+  font-family: 'Zen Old Mincho', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.25em;
+
+  color: var(--text);
+}
+
+/*анимация 'адрес'*/
+
+.address_text:hover {
+    color: #B98484;
+}
+
+.address_text:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.25s;
+}
+
+.address_text::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Главная*/
+
+/*контент контеинер*/
+.container_content{
+  margin: 75px 0 170px 0;
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; 
+}
+
+
+/*текст1*/
+.container_content h5{
+  width: 600px;
+  height: 180px;
+  margin: 0 408px 0 0;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+
+  color: var(--text);
+}
+
+/*текст2*/
+.container_content p{
+  width: 520px;
+  height: 113px;
+  margin: 0 488px 24px 0;
+  
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+
+  color: var(--text);
+}
+
+/*кнопка 'Закакзать столик'*/
+.order_btn{
+  margin: 0 708px 0 0;
+  padding-top: 70px;
+  width: 300px;
+  height: 80px;
+
+  background: linear-gradient(99.96deg, #A0816A 21.9%, #765953 80.65%);
+  background-size: 150%;
+  box-shadow: 18px 20px 27.1px rgba(0, 0, 0, 0.25);
+  border-radius: 483px;
+  /*анимация*/
+  transition: .5s;
+}
+
+/*анимация*/
+.order_btn:hover{
+  width: 305px;
+  height: 85px;
+  background-position: right;
+}
+
+/*текст кнопки*/
+.order_btn{
+  padding: 0 0 9px 0;
+
+  font-family: 'Zen Old Mincho', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  color: var(--text);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Как мы готовим*/
+
+/*контеинер двух классов*/
+.How_we_cook_container{
+  display: flex;
+  justify-content: center;
+  
+
+  margin-bottom: 45px;
+  width: 100%;
+  height: 600px;
+
+/*  background-color: black;*/
+}
+
+/*левый класс*/
+.left_class{
+  width: 500px;
+  height: 480px;
+  margin-right: 50px;
+}
+
+/*текст левого класса*/
+.left_class h4{
+  margin: 140px 0 0 10px;
+  height: 100px;
+  width: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: var(--text);
+}
+
+/*контейнер ячеек*/
+.box_menu{
+	margin-right: 200px;
+	margin-top: 2px;
+	width: 500px;
+	height: 250px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*ячейки*/
+.box{
+  display: flex;
+  flex-direction: column;
+  
+  margin: 16px;
+  width: 200px;
+  height: 230px;
+
+  filter: drop-shadow(8px 8px 150px white);
+  background-color: #E4CDCD;
+  border-radius: 32px;
+}
+
+/*текст в ячейке*/
+.box p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: -0.01em;
+}
+
+/*картинка в ячейке*/
+.box img{
+  padding: 5px;
+  margin-top: 25px;
+  width: 150px;
+  height: 120px;
+}
+
+
+
+
+/*правый класс*/
+.right_class{
+  width: 480px;
+  height: 480px;
+}
+
+/*текст правого класса*/
+.right_class h5{
+  width: 590px;
+  height: 41px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.07em;
+
+  color: var(--text);
+}
+
+/*рамка для виидео*/
+.video_cook{
+  width: 500.81px;
+  height: 287.5px;
+  margin: 20px 0 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(71.76deg, #FFFFFF 0.11%, #53322B 99.94%);
+  border-radius: 36px;
+}
+
+/*видео*/
+.video_cook iframe{
+  
+  width: 484.11px;
+  height: 278.23px;
+ 
+  border-radius: 33px;
+}
+
+/*кнопка перехода в меню*/
+.right_class a{
+  width: 212px;
+  height: 72px;
+  margin:59px 0 0 41px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  filter: drop-shadow(8px 8px 50px white);
+  background-color: #F7EDED;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  /*анимация*/
+  transition: .5s;
+}
+
+.right_class a:hover{
+  filter: drop-shadow(8px 8px 30px white);
+  width: 217px;
+  height: 77px;
+}
+
+/*текст кнопки*/
+.right_class a{
+  padding: 5px;
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.07em;
+
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*меню*/
+
+/*header*/
+.header_container{
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*текст*/
+.header_container h4{
+  width: 121px;
+  height: 57px;
+  margin: 60px 510px 0 0;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+
+  color: var(--text);
+}
+
+/*стрелка назад*/
+.back_btn{
+  margin: 72px 450px 0 0;
+}
+
+/*контейнер где будут карточки*/
+.card_container{
+  margin-top: 15px;
+  width: 100%;
+  height: 800px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*подконтейнер карточек*/
+.menu_list_container{
+  width: 1250px;
+  height: 780px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*карточки*/
+.card{
+  margin: 18px;
+  width: 230px;
+  height: 360px;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   
+  
+  background-color: #D9D9D9;
+  filter: drop-shadow(1px 1px 300px whitesmoke);
+  border-radius: 49px;
+}
+
+/*редактирование цен и описания блюд*/
+
+.card h5{
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
+.card p{
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+/*название блюд*/
+.card h4{
+  margin: 10px 0 0 0;
+
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.01em;
+
+  color: #000000;
+}
+
+/*цена*/
+.card h5{
+  margin-top: -15px;
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+
+  color: #000000;
+}
+
+/*описание блюда*/
+.card p{
+  margin-top: 30px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 2px;
+  letter-spacing: -0.01em;
+
+  color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Заведение*/
+/*контент контейнер*/
+.institution_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 645px;
+}
+
+/*контейнер с изображениями заведений*/
+.container_photo{
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 60px;
+  width: 658px;
+  height: 556px;
+}
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*редактирование изображений в контейнере*/
+.item_1{
+  width: 259px;
+  height: 405px;
+}
+
+.item_2{
+  margin-left: 30px;
+  width: 330px;
+  height: 208px;
+}
+
+.item_3{
+  margin-left: 30px;
+  width: 210px;
+  height: 261px;
+}
+
+/*свечение изображений*/
+.item{
+  filter: drop-shadow(2px 2px 150px #E0FFFF);
+}
+
+/*текст справа*/
+/*контейнер*/
+.txt_container{
+  position: relative;
+  width: 400px;
+  height: 700px;
+}
+
+/*текст*/
+.txt1{
+  margin-top: 80px;
+  width: 425px;
+  height: 215px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #FFFFFF;
+}
+
+.txt2{
+  margin: 20px 70px 0 0;
+  width: 566px;
+  height: 143px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+
+  color: #FFFFFF;
+}
+
+.txt3{
+  margin-top: 20px;
+  width: 469px;
+  height: 35px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.04em;
+
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*контакты*/
+.contact_container{
+  width: 100%;
+  height: 645px;
+
+  display: flex;
+  justify-content: center;
+}
+
+/*фон для крты*/
+.container_map{
+  margin: 50px 60px 0 0;
+  width: 674px;
+  height: 450px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(115.78deg, #70534D 1.84%, #B98484 99.21%);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 33px;
+}
+
+/*контейнер с информацией*/
+.container_info{
+  margin: 65px -110px 0 0;
+  width: 400px;
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*блоки информации*/
+.info{
+  width: 400px;
+  height: 86px;
+  padding-bottom: 100px;
+
+  display: flex;
+}
+
+/*контейнер с текстом*/
+.t_container{
+  margin: 0 0 10px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*заголовки*/
+.t_container h4{
+  margin-left: 8px;
+  margin-top: -8px;
+  width: 198px;
+  height: 51px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+
+  color: #FFFFFF;
+}
+
+/*описание*/
+.t_container p{
+  margin-top: 4px;
+  width: 303px;
+  height: 35px;
+
+  font-family: 'Zen Old Mincho';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer_navigation{
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fmenu{
+  margin: 15px;
+  width: 25px; 
+  height: 25px;
+  
+  background: #B98484;
+  border-radius: 50%;
+}
+
+.f{
+	margin: 5px;
+	width: 15px;
+	height: 15px;
+
+	background-color: #62433C;
+	border-radius: 50%;
+}
